@@ -24,8 +24,9 @@ PasswordAuthentication yes
 ```
 nano /etc/ssh/sshd_config
 ```
-
-
+```
+sudo systemctl status ssh
+```
 ```
 sudo systemctl restart ssh
 ```
