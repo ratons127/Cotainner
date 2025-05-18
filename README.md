@@ -5,6 +5,16 @@ sudo apt install openssh-server -y
 sudo apt install nano -y
 ```
 ```
+sudo systemctl start ssh
+sudo systemctl enable ssh
+
+```
+```
+sudo ufw allow ssh
+sudo ufw enable
+sudo ufw status
+```
+```
 nano /etc/ssh/sshd_config
 ```
 ```
@@ -14,6 +24,7 @@ PasswordAuthentication yes
 ```
 nano /etc/ssh/sshd_config
 ```
+
 
 ```
 sudo systemctl restart ssh
